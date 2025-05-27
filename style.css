@@ -1,0 +1,112 @@
+*{
+  border: 0;
+  box-sizing: border-box;
+  font-family: farsi;
+}
+@font-face {
+  font-family: farsi;
+  src: url("./Cairo-VariableFont_slnt\,wght.ttf");
+}
+body {
+  font-family: sans-serif;
+  direction: rtl;
+  background: #07070A;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+#summary {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.task{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background: #0000008a;
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+
+}
+#search-day {
+  display: block;
+  width: 360px;
+  font-size: 16px;
+  margin: 0 auto 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.day-card {
+  background: #24272B;
+  padding: 7px;
+  border-radius: 10px;
+
+}
+input,select,button{
+  margin: 10px 0;
+  zoom: 0%;
+}
+
+.day-card h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
+  border-bottom: 2px solid #535353;
+  padding-bottom: 5px;
+  font-family: farsi;
+}
+
+.task.low { border-right: 5px solid green; }
+.task.medium { border-right: 5px solid orange; }
+.task.high { border-right: 5px solid red; }
+
+.task.done {
+  background: #2e7d32;
+}
+
+.day-card.completed {
+  background: #12bd1b;
+}
+.task-actions {
+  float: right;
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+.task-actions i {
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s;
+}
+.task-actions i:hover {
+  color: #ffffff;
+}
+
+button{
+  background-color: transparent;
+}
+
+.notify-btn { background: transparent ; border:none; cursor:pointer;  width: 20px; height: 20px;  color: white; padding: 0 20px; }
+.edit-btn { background: transparent; border:none; cursor:pointer; width: 20px; height: 20px;  color: white;padding: 0 20px;}
+.delete-btn { background: transparent; border:none; cursor:pointer;  width: 20px; height: 20px;  color: white;padding: 0 20px; }
+.checkclass { background: transparent; border:none; cursor:pointer; width: 17px; height: 17px; margin-left: 10px;  }
+.txt {font-size: 17px; direction: ltr; width: 280px; margin-left: 20px;}
+.inTitle { border:none; cursor:pointer; width: 100%; height: 40px; font-size: 16px;  border-radius: 4px; direction: ltr;  padding: 15px; }
+.inTime { border:none; cursor:pointer; width: 100%; height: 40px; font-size: 16px;  border-radius: 4px; direction: ltr;  padding: 0 15px; color: black;}
+select  { border:none; cursor:pointer; width: 100%; height: 40px; font-size: 16px;  border-radius: 4px; direction: ltr;  padding: 0 15px; color: black;}
+.add-task { border:none; cursor:pointer; width: 100%; height: 40px; font-size: 13px;  border-radius: 4px; direction: ltr; background-color: #0874f8; color: black; }
+  
+
+
+
